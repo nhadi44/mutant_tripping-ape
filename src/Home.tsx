@@ -482,17 +482,40 @@ const Home = (props: HomeProps) => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
       <Container maxWidth="xs" style={{ position: "relative" }}>
+        <div>
+          <Typography
+            variant="h4"
+            style={{
+              color: "white",
+              marginBottom: 30,
+              textAlign: "center",
+              textTransform: "uppercase",
+              fontFamily: "Symtext",
+            }}
+          >
+            Lil Akari 222
+          </Typography>
+        </div>
         <Paper
           style={{
             padding: 24,
             paddingBottom: 10,
             backgroundColor: "#151A1F",
-            borderRadius: 6,
+            borderRadius: 10,
           }}
         >
+          <div>
+            <img
+              src="/logo.gif"
+              alt="lil-akari-222"
+              style={{ maxWidth: "100%", marginBottom: 10, borderRadius: 10 }}
+            />
+          </div>
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
@@ -503,23 +526,36 @@ const Home = (props: HomeProps) => {
                   direction="row"
                   justifyContent="center"
                   wrap="nowrap"
+                  spacing={5}
                 >
                   <Grid item xs={3}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      style={{
+                        fontFamily: "Symtext",
+                      }}
+                    >
                       Remaining
                     </Typography>
                     <Typography
                       variant="h6"
                       color="textPrimary"
                       style={{
-                        fontWeight: "bold",
+                        fontFamily: "Symtext",
                       }}
                     >
                       {`${itemsRemaining}`}
                     </Typography>
                   </Grid>
                   <Grid item xs={4}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      style={{
+                        fontFamily: "Symtext",
+                      }}
+                    >
                       {isWhitelistUser && discountPrice
                         ? "Discount Price"
                         : "Price"}
@@ -527,7 +563,9 @@ const Home = (props: HomeProps) => {
                     <Typography
                       variant="h6"
                       color="textPrimary"
-                      style={{ fontWeight: "bold" }}
+                      style={{
+                        fontFamily: "Symtext",
+                      }}
                     >
                       {isWhitelistUser && discountPrice
                         ? `◎ ${formatNumber.asNumber(discountPrice)}`
