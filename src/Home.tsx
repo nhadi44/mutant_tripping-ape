@@ -517,7 +517,13 @@ const Home = (props: HomeProps) => {
             />
           </div>
           {!wallet.connected ? (
-            <ConnectButton>Connect Wallet</ConnectButton>
+            <ConnectButton
+              style={{
+                fontFamily: "Symtext",
+              }}
+            >
+              Connect Wallet
+            </ConnectButton>
           ) : (
             <>
               {candyMachine && (
@@ -588,7 +594,9 @@ const Home = (props: HomeProps) => {
                           variant="caption"
                           align="center"
                           display="block"
-                          style={{ fontWeight: "bold" }}
+                          style={{
+                            fontFamily: "Symtext",
+                          }}
                         >
                           TO END OF MINT
                         </Typography>
@@ -617,7 +625,9 @@ const Home = (props: HomeProps) => {
                               variant="caption"
                               align="center"
                               display="block"
-                              style={{ fontWeight: "bold" }}
+                              style={{
+                                fontFamily: "Symtext",
+                              }}
                             >
                               UNTIL PUBLIC MINT
                             </Typography>
