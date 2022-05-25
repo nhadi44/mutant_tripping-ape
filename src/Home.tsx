@@ -498,7 +498,7 @@ const Home = (props: HomeProps) => {
               fontFamily: "Symtext",
             }}
           >
-            Mutant Trippin Ape 3
+            Mutant Trippin Ape 
           </Typography>
         </div>
         <Paper
