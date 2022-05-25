@@ -511,7 +511,7 @@ const Home = (props: HomeProps) => {
         >
           <div>
             <img
-              src="/logo.gif"
+              src="/preview.gif"
               alt="muttan-tripping-ape-3"
               style={{ maxWidth: "100%", marginBottom: 10, borderRadius: 10 }}
             />
