@@ -498,7 +498,7 @@ const Home = (props: HomeProps) => {
               fontFamily: "Symtext",
             }}
           >
-            Mutant Tripping Ape 3
+            Mutant Trippin Ape 3
           </Typography>
         </div>
         <Paper
@@ -512,7 +512,7 @@ const Home = (props: HomeProps) => {
           <div>
             <img
               src="/preview.gif"
-              alt="muttan-tripping-ape-3"
+              alt="muttan-trippin-ape-3"
               style={{ maxWidth: "100%", marginBottom: 10, borderRadius: 10 }}
             />
           </div>
